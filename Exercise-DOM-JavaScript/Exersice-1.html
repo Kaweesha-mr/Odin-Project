@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- your HTML file: -->
+
+<body>
+    <div id="container">
+
+
+    </div>
+
+
+
+    <script>
+
+
+        //selecting the container
+        const container = document.querySelector('#container');
+
+        //creating the para tag and changing its styles
+        const para = document.createElement('p');
+        para.style.cssText = "color:red";
+        para.textContent = "hey im red";
+
+        //creating the header tag and change its styles using inline styles
+        const h3 = document.createElement('h3');
+        para.style.cssText = "color:blue";
+        para.textContent = "hey im blue";
+
+
+        const conatin = document.createElement('div');
+        conatin.style.cssText = "background-color: red; color: black; border: 1px solid black;";
+
+        const h1 = document.createElement('h1');
+        h1.textContent = "hey im inside the div";
+
+        const p = document.createElement('p');
+        p.textContent = "mee too";
+
+        //append the created h3 and para 
+        container.appendChild(para);
+        container.appendChild(h3);
+        contain.appendChild(h1);
+        contain.appendChild(p);
+        container.append(contain);        
+    </script>
+</body>
+
+</html>
