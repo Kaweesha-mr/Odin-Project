@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 0.5fr 3fr;
+    grid-template-rows:1fr 5fr;
+    background-color: white;
+    height: 100vh;
+}
+
+.side-bar{
+    border: 1px solid black;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+header{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: 1fr 1fr; 
+}
+header>.titles>.search>{
+    
+}
+
+header>nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+header>nav>.logo{
+
+    font-size: larger;
+    font-weight: 600;
+}
+
+header>nav>ul{
+
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.side-bar >.list-1>ul>li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.side-bar >.list-2>ul>li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+main{
+
+    border: 1px solid black;
+    grid-column: 2/3;
+
+
+    display: grid;
+    /* use auto fit */
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+main>.card{
+    padding: 1rem;
+    border-radius: 15px;
+    margin: 10px;
+    border: 1px solid black;
+
+}
