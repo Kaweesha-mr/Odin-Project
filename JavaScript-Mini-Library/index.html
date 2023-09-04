@@ -16,7 +16,10 @@
 
         <nav>
             <div class="logo">
-                <p>Libarary</p>
+                <p>
+                    <!-- add book icon -->
+                    <i class="fas fa-book"></i>
+                    Libarary</p>
             </div>
             <ul class="social">
                 <li><i class="fab fa-facebook"></i></li>
@@ -28,8 +31,46 @@
         </nav>
 
     </header>
-    <main></main>
+    <main>
+
+        <p class="btn-container"> 
+            
+            <span class="btn" id="showDialog">
+                <i class="fas fa-plus"></i>
+                Add Book
+            </span>
+        </p>
+
+        <dialog id="enter-book">
+
+
+            <div class="form-container">
+
+                <form action="dialog" class="form-1">
+                    <label>Book Title</label>
+                    <input type="text" placeholder="Book Title"> <br>
+                    <label>Book Author</label>
+                    <input type="text" placeholder="Book Author"> <br>
+                    <label>Book Pages</label>
+                    <input type="text" placeholder="Book Pages"> <br>
+                    
+                    <input type="submit" value="Add Book" class="add-book">
+                    <input type="submit" value="Cansel" class=".Cancel-form">
+                </form>
+
+            </div>
+
+        </dialog>
+
+        <div class="book-holder">
+
+
+
+        </div>
+    </main>
     <footer></footer>
     
+
+    <script src="./script.js"></script>
 </body>
 </html>
