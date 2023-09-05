@@ -67,7 +67,7 @@ main> .btn-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px 0;
+    margin: 50px ;
 }
 
 main> .btn-container > .btn {
@@ -79,6 +79,7 @@ main> .btn-container > .btn {
     cursor: pointer;
     border-radius: 30px;
     transition: all 0.3s ease;
+    position: absolute;
 }
 
 main> .btn-container > .btn:hover {
@@ -102,20 +103,53 @@ main>.book-holder{
     padding: 20px 100px;
 }
 
-
+#enter-book::backdrop{
+    position: absolute;
+}
 #enter-book{
+    top: 5rem;
+    left: 40%;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+form{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px 100px;
+    width: 20em;
+    
+}
+form>input[type="text"]{
+    margin: .4rem;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 1px solid #333;
+    width: 100%;
+    height: 3rem;
+    text-align: center;
+    font: 1.2rem 'Poppins', sans-serif;
+    font-weight: 500;
 }
 
-form>.form-container>input{
 
-    padding: 1rem;
+form > .button-align{
+    display: flex;
+    width: 100%;
 }
 
+.button-align>input[type="submit"]{
+    padding: .5rem;
+    border-radius: 10px;
+    background-color: #020000;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+}
 
 /* can use to change elements if the dialog panel is clicked or opened */
 /* dialog::backdrop{
