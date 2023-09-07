@@ -63,17 +63,9 @@ nav>ul>li{
     cursor: pointer;
 }
 
-main{
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-}
-
-main> .btn-container {
-    margin: 50px ;
-}
 
 main> .btn-container > .btn {
+    margin: 50px ;
     padding: 10px 20px;
     background-color: transparent;
     color: #020000;
@@ -99,13 +91,6 @@ main> .btn-container > .btn:active {
 }
 
 
-main>.book-holder{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-    padding: 20px 100px;
-}
-
 #enter-book::backdrop{
     z-index: 999;
     /* add blur */
@@ -114,6 +99,8 @@ main>.book-holder{
 }
 
 
+
+/* this is used to center the  div */
 #enter-book {
     z-index: 1000;
     border-radius: 30px;
@@ -168,6 +155,4 @@ form > .button-align{
 /* dialog::backdrop{
     
 } */
-
-
 
