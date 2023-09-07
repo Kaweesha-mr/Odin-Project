@@ -114,12 +114,15 @@ main>.book-holder{
 }
 
 
-#enter-book{
+#enter-book {
     z-index: 1000;
     border-radius: 30px;
     padding: 20px;
-    border:  2px solid #5d5c5c;
-  
+    border: 2px solid #5d5c5c;
+    position: fixed; /* Position it as a fixed element */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center both horizontally and vertically */
 }
 
 form{
