@@ -63,8 +63,18 @@ nav>ul>li{
     cursor: pointer;
 }
 
+.container{
 
-main> .btn-container > .btn {
+    display: flex;
+    justify-content: center;
+}
+
+.container> .btn-container {
+
+    margin: 50px;
+}
+
+.container> .btn-container > .btn {
     margin: 50px ;
     padding: 10px 20px;
     background-color: transparent;
@@ -74,10 +84,10 @@ main> .btn-container > .btn {
     cursor: pointer;
     border-radius: 30px;
     transition: all 0.3s ease;
-    position: absolute;
+
 }
 
-main> .btn-container > .btn:hover {
+.container> .btn-container > .btn:hover {
     /* add a background shadow */
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     /* change the background color */
@@ -151,8 +161,31 @@ form > .button-align{
     transition: all 0.3s ease;
 }
 
+.book-holder{
+    display: grid;
+    /* add grid template columns using auto fill */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: minmax(300px, 1fr);
+    margin: 1rem;
+}
+
+.book-holder>.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+
+
+
+
 /* can use to change elements if the dialog panel is clicked or opened */
 /* dialog::backdrop{
-    
 } */
 
